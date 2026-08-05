@@ -833,7 +833,7 @@ function CompareColumn({ tone, tag, heading, steps, metrics }) {
             <div
               style={{
                 fontFamily: FONT,
-                fontSize: "1.75rem",
+                fontSize: "1.15rem",
                 fontWeight: 300,
                 color: tone,
                 lineHeight: 1.2,
