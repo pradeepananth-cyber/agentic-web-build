@@ -1577,8 +1577,9 @@ function CTA() {
             fontSize: "1rem",
             lineHeight: 1.5,
             color: "rgba(255,255,255,0.85)",
-            maxWidth: 520,
-            margin: 0,
+            margin: `0 auto ${C.s05}`,
+            maxWidth: 640,
+            textAlign: "center",
           }}
         >
           The Design System MCP gateway is live, serving tokens harvested from
