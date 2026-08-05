@@ -178,7 +178,7 @@ function TopStrip() {
     >
       {/* IBM logo */}
      <img
-  src="IBM_logo_rev_blue50_RGB"
+  src="IBM_logo_rev_blue50_RGB.png"
   alt="IBM"
  alt="IBM"
   height={24}
