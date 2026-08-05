@@ -181,7 +181,7 @@ function TopStrip() {
   src="IBM_logo_rev_blue50_RGB.png"
   alt="IBM"
  alt="IBM"
-  height={24}
+  height={36}
   style={{ flexShrink: 0 }}
 />
       {/* Title text */}
