@@ -746,7 +746,7 @@ function TheOpportunity() {
             ]}
             metrics={[
               ["8–16", "Weeks to launch"],
-              ["$50K+", "Per site cost"],
+              ["$50K-$500K+", "Per site cost"],
               ["Variable", "Consistency"],
             ]}
           />
