@@ -237,17 +237,6 @@ function Hero() {
       }}
     >
       <Grid narrow>
-        <p
-          style={{
-            fontFamily: FONT,
-            fontSize: "0.75rem",
-            letterSpacing: "0.32px",
-            color: C.textSecondary,
-            margin: `0 0 ${C.s06}`,
-          }}
-        >
-          Enterprise Web Strategy / Life Sciences
-        </p>
         <h1
           style={{
             fontFamily: FONT,
