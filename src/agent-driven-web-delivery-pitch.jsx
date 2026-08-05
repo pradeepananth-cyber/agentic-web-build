@@ -348,6 +348,7 @@ const pBody = {
 const ANALYST_SLIDES = [
   {
     title: "Redirect Efforts From Bloat to Shared Foundations",
+    image: "Redirect_Efforts_to_Foundations.png",
     heading: "Redirect budget from CMS bloat to shared foundations",
     points: [
       "Overbuilt WCM / DXP traps budget in page-template sprawl, duplicated logic, and unused features",
@@ -358,6 +359,7 @@ const ANALYST_SLIDES = [
   },
   {
     title: "Mid-Term: WCM 4.0 Inbound Experience Director",
+    image: "WCM_Functionality.png",
     heading: "The WCM evolves into an inbound experience director",
     points: [
       "WCM keeps web-specific strengths: long-form content, page curation, UX governance, and workflow",
@@ -368,6 +370,7 @@ const ANALYST_SLIDES = [
   },
   {
     title: "Long-Term: Agentic Assembly Obviates Web CMS",
+    image: "Agentic_Assemblye_Obviates_CMS.png",
     heading: "Long-term, agentic assembly obviates the web CMS",
     points: [
       "Intent + context → foundation services → agentic workflow → render logic → inbound experiences",
@@ -404,76 +407,28 @@ function AnalystCarousel() {
           }}
         >
           {/* Slide body */}
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "minmax(0,1fr)",
-              minHeight: 300,
-            }}
-          >
-            <div style={{ padding: C.s09 }} key={i}>
-              <p
+          <div style={{ minHeight: 300 }}>
+            <div key={i}>
+              <div
                 style={{
-                  fontFamily: MONO,
-                  fontSize: "0.75rem",
-                  color: C.interactive,
-                  margin: `0 0 ${C.s05}`,
-                  animation: "fadeInUp 0.4s ease",
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  padding: C.s06,
+                  background: C.background,
                 }}
               >
-                Slide {i + 1} of {total}
-              </p>
-              <h3
-                style={{
-                  fontFamily: FONT,
-                  fontSize: "1.75rem",
-                  fontWeight: 400,
-                  color: C.textPrimary,
-                  margin: `0 0 ${C.s07}`,
-                  maxWidth: 720,
-                  animation: "fadeInUp 0.45s ease",
-                }}
-              >
-                {s.heading}
-              </h3>
-              <ul
-                style={{
-                  listStyle: "none",
-                  padding: 0,
-                  margin: `0 0 ${C.s07}`,
-                  maxWidth: 760,
-                }}
-              >
-                {s.points.map((p, idx) => (
-                  <li
-                    key={idx}
-                    style={{
-                      display: "grid",
-                      gridTemplateColumns: "24px 1fr",
-                      gap: C.s04,
-                      padding: `${C.s04} 0`,
-                      borderBottom: `1px solid ${C.borderSubtle00}`,
-                      fontFamily: FONT,
-                      fontSize: "0.9375rem",
-                      color: C.textSecondary,
-                      lineHeight: 1.5,
-                      animation: `fadeInUp ${0.4 + idx * 0.08}s ease`,
-                    }}
-                  >
-                    <span
-                      style={{
-                        fontFamily: MONO,
-                        fontSize: "0.75rem",
-                        color: C.textHelper,
-                        paddingTop: 3,
-                      }}
-                    >
-                      {String(idx + 1).padStart(2, "0")}
-                    </span>
-                    <span>{p}</span>
-                  </li>
-                ))}
-              </ul>
+                <img
+                  src={s.image}
+                  alt={`${s.title} — ${s.heading}`}
+                  style={{
+                    maxWidth: "100%",
+                    maxHeight: 520,
+                    objectFit: "contain",
+                    animation: "fadeInUp 0.4s ease",
+                  }}
+                />
+              </div>
               <div
                 style={{
                   display: "flex",
@@ -547,6 +502,22 @@ function AnalystCarousel() {
             >
               ›
             </button>
+          </div>
+
+          {/* Caption bar */}
+          <div
+            style={{
+              padding: `${C.s04} ${C.s06}`,
+              background: C.layer01,
+              borderTop: `1px solid ${C.borderSubtle00}`,
+              fontFamily: FONT,
+              fontSize: "0.8125rem",
+              fontWeight: 500,
+              color: C.textSecondary,
+              textAlign: "center",
+            }}
+          >
+            {i + 1} / {total} — {s.title}
           </div>
         </div>
         <p
