@@ -106,8 +106,9 @@ function H2({ children, style }) {
         fontWeight: 400,
         lineHeight: 1.25,
         color: C.textPrimary,
-        margin: `0 0 ${C.s05}`,
+        margin: `0 auto ${C.s05}`,
         maxWidth: 640,
+        textAlign: "center",
         ...style,
       }}
     >
@@ -125,7 +126,8 @@ function Intro({ children }) {
         lineHeight: 1.5,
         color: C.textSecondary,
         maxWidth: 600,
-        margin: `0 0 ${C.s09}`,
+        margin: `0 auto ${C.s09}`,
+        textAlign: "center",
       }}
     >
       {children}
@@ -339,7 +341,8 @@ const pBody = {
   lineHeight: 1.5,
   color: C.textSecondary,
   maxWidth: 620,
-  margin: `0 0 ${C.s06}`,
+  margin: `0 auto ${C.s06}`,
+  textAlign: "center",
 };
 
 // ============================================================
@@ -765,7 +768,7 @@ function TheOpportunity() {
             ]}
             metrics={[
               ["Hours", "To first draft"],
-              ["90%+", "Cost reduction"],
+              ["Upto 90%", "Cost reduction"],
               ["Guaranteed", "Consistency"],
             ]}
           />
