@@ -163,6 +163,58 @@ const NAV_ITEMS = [
   ["benefits", "Benefits"],
 ];
 
+function TopStrip() {
+  return (
+    <div
+      style={{
+        height: 48,
+        background: C.bgInverseDark,
+        borderBottom: `1px solid ${C.bgInverse}`,
+        display: "flex",
+        alignItems: "center",
+        padding: `0 ${C.s05}`,
+        gap: C.s05,
+      }}
+    >
+      {/* IBM logo */}
+     <img
+  src="IBM_logo_rev_blue50_RGB"
+  alt="IBM"
+ alt="IBM"
+  height={24}
+  style={{ flexShrink: 0 }}
+/>
+      {/* Title text */}
+      <div style={{ display: "flex", flexDirection: "column", gap: 0 }}>
+        <span
+          style={{
+            fontFamily: MONO,
+            fontSize: "0.75rem",
+            fontWeight: 600,
+            letterSpacing: "0.12em",
+            color: C.supportWarning,
+            textTransform: "uppercase",
+            lineHeight: 1.3,
+          }}
+        >
+          IBM Point of View
+        </span>
+        <span
+          style={{
+            fontFamily: MONO,
+            fontSize: "0.6875rem",
+            letterSpacing: "0.08em",
+            color: C.textHelper,
+            textTransform: "uppercase",
+            lineHeight: 1.3,
+          }}
+        >
+          EXECUTIVE BRIEFING
+        </span>
+      </div>
+    </div>
+  );
+}
 function ShellHeader() {
   return (
     <header
@@ -1855,6 +1907,7 @@ export default function App() {
       className="cds-scroll"
       style={{ background: C.background, minHeight: "100vh", fontFamily: FONT }}
     >
+      <TopStrip />
       <ShellHeader />
       <Hero />
       <TheShift />
