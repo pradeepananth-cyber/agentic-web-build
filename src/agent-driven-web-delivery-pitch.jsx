@@ -262,24 +262,18 @@ function Hero() {
             maxWidth: 560,
             margin: `0 0 ${C.s08}`,
           }}
-        >
-          This shift is an inflection point. Enterprises that prepare their
-          design systems for an agent-driven world will finally achieve the
-          brand consistency that has eluded them for years. Those that don't
-          will carry the same inconsistencies into the next era — at machine
-          speed.
-        </p>
-        <span
-          style={{
-            display: "inline-flex",
-            alignItems: "center",
-            background: C.layer01,
-            color: C.textSecondary,
-            fontFamily: FONT,
-            fontSize: "0.75rem",
-            padding: `${C.s02} ${C.s04}`,
-            borderRadius: 24,
-          }}
+        > At the center of this shift is a design system enforced through an
+          MCP gateway — a structured API that agents query in real time while
+          building. In this human-in-the-loop model, marketers and their
+          agencies leverage agents to build websites, with humans reviewing
+          and refining what the agent produces. The result: dramatically
+          faster delivery, significant cost reduction, and high-fidelity
+          design adherence that no manual review process has been able to
+          sustain at scale. </p> 
+          <span style={{ display: "inline-flex",
+          alignItems: "center", background: C.layer01, color:
+          C.textSecondary, fontFamily: FONT, fontSize: "0.75rem", padding: `$
+          {C.s02} ${C.s04}`, borderRadius: 24, }}
         >
           Design System Governance · Agentic AI · Life Sciences Marketing
         </span>
