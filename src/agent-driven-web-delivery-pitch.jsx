@@ -244,7 +244,6 @@ function Hero() {
             fontWeight: 300,
             lineHeight: 1.19,
             color: C.textPrimary,
-            maxWidth: 820,
             margin: `0 0 ${C.s07}`,
           }}
         >
@@ -259,8 +258,8 @@ function Hero() {
             fontSize: "1.25rem",
             lineHeight: 1.4,
             color: C.textSecondary,
-            maxWidth: 560,
             margin: `0 0 ${C.s08}`,
+            textAlign: "left",
           }}
         > At the center of this shift is a design system enforced through an
           MCP gateway — a structured API that agents query in real time while
